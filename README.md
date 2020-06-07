@@ -9,7 +9,7 @@ Supports both http and https
 * [Arduino CLI](https://arduino.github.io/arduino-cli/installation/)
 * CP210x USB to UART Bridge VCP Driver
 * openssl
-* dotnet sdk 3.1
+* dotnet core sdk (3.1)
 
 ## Getting Started
 
@@ -20,8 +20,6 @@ cd ExampleHumidityServer
 dotnet build .
 dotnet run -p ExampleHumidityServer.csproj
 ```
-
-Keep a note of the IP address that this server is running on.
 
 ### Build ESP8266 resources
 
@@ -115,6 +113,10 @@ info: ExampleHumidityServer.Controllers.HumidityController[0]
 Esp8266:
 
 ```bash
+{"HumidityPercentage": 58.00 }
+HTTP Response code: 202
+{"HumidityPercentage": 59.00 }
+HTTP Response code: 202
 {"HumidityPercentage": 59.00 }
 HTTP Response code: 202
 ```
