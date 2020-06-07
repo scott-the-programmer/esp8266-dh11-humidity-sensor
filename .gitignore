@@ -1,0 +1,6 @@
+#Compiled binaries
+*.esp8266.*
+
+.vscode
+esp8266/values.h
+esp8266/endpoint.h
