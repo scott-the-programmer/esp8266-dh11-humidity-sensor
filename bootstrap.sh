@@ -10,3 +10,4 @@ arduino-cli core update-index
 
 echo "Downloading esp8266 dependencies"
 arduino-cli core download "esp8266:esp8266"
+arduino-cli lib install "DHT sensor library for ESPx"
