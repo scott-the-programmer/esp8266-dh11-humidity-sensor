@@ -21,7 +21,7 @@ dotnet build .
 dotnet run -p ExampleHumidityServer.csproj
 ```
 
-### Build ESP8266 resources
+### Download dependencies
 
 In another terminal session, run the following script to list out your connected boards and update the ardunio-cli repository with the esp8266 index
 
