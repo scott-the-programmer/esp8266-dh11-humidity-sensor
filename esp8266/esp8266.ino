@@ -1,14 +1,14 @@
 #include <ESP8266WiFi.h>
-#include "api-repository.h"
-#include "humidity-repository.h"
+#include "rest-client.h"
+#include "humidity-client.h"
 #include "endpoint.h"
 #include "values.h"
 #include "DHTesp.h"
 
 DHTesp dht;
 
-ApiRepository api = ApiRepository(endpoint, thumbPrint);
-HumidityRepository humid = HumidityRepository();
+RestClient api = RestClient(endpoint, thumbPrint);
+HumidityClient humid = HumidityClient();
 
 void setup()
 {
